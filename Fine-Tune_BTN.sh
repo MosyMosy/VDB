@@ -71,50 +71,22 @@ cd BMS
 python finetune.py --save_dir ./logs/baseline_teacher/BTrans/EuroSAT --target_dataset EuroSAT --subset_split datasets/split_seed_1/EuroSAT_labeled_80.csv --embedding_load_path ./logs/baseline_teacher/checkpoint_best.pkl --freeze_backbone --model resnet10_BTrans &
 python finetune.py --save_dir ./logs/baseline_teacher/BTrans/CropDisease --target_dataset CropDisease --subset_split datasets/split_seed_1/CropDisease_labeled_80.csv --embedding_load_path ./logs/baseline_teacher/checkpoint_best.pkl --freeze_backbone --model resnet10_BTrans &
 python finetune.py --save_dir ./logs/baseline_teacher/BTrans/ISIC --target_dataset ISIC --subset_split datasets/split_seed_1/ISIC_labeled_80.csv --embedding_load_path ./logs/baseline_teacher/checkpoint_best.pkl --freeze_backbone --model resnet10_BTrans &
-wait
 python finetune.py --save_dir ./logs/baseline_teacher/BTrans/ChestX --target_dataset ChestX --subset_split datasets/split_seed_1/ChestX_labeled_80.csv --embedding_load_path ./logs/baseline_teacher/checkpoint_best.pkl --freeze_backbone --model resnet10_BTrans
 python finetune.py --save_dir ./logs/baseline_teacher/BTrans/ImageNet_novel --target_dataset ImageNet_test --subset_split datasets/split_seed_1/ImageNet_val_labeled.csv --embedding_load_path ./logs/baseline_teacher/checkpoint_best.pkl --freeze_backbone --model resnet10_BTrans
 
-
-# ------------------------------------------ baseline_na mini -----------------------------------
-python finetune.py --save_dir ./logs/baseline_na_teacher/BTrans/EuroSAT --target_dataset EuroSAT --subset_split datasets/split_seed_1/EuroSAT_labeled_80.csv --embedding_load_path ./logs/baseline_na_teacher/checkpoint_best.pkl --freeze_backbone --model resnet10_BTrans &
-python finetune.py --save_dir ./logs/baseline_na_teacher/BTrans/CropDisease --target_dataset CropDisease --subset_split datasets/split_seed_1/CropDisease_labeled_80.csv --embedding_load_path ./logs/baseline_na_teacher/checkpoint_best.pkl --freeze_backbone --model resnet10_BTrans &
-python finetune.py --save_dir ./logs/baseline_na_teacher/BTrans/ISIC --target_dataset ISIC --subset_split datasets/split_seed_1/ISIC_labeled_80.csv --embedding_load_path ./logs/baseline_na_teacher/checkpoint_best.pkl --freeze_backbone --model resnet10_BTrans &
-wait
-python finetune.py --save_dir ./logs/baseline_na_teacher/BTrans/ChestX --target_dataset ChestX --subset_split datasets/split_seed_1/ChestX_labeled_80.csv --embedding_load_path ./logs/baseline_na_teacher/checkpoint_best.pkl --freeze_backbone --model resnet10_BTrans
-python finetune.py --save_dir ./logs/baseline_na_teacher/BTrans/ImageNet_novel --target_dataset ImageNet_test --subset_split datasets/split_seed_1/ImageNet_val_labeled.csv --embedding_load_path ./logs/baseline_na_teacher/checkpoint_best.pkl --freeze_backbone --model resnet10_BTrans
 
 
 # ------------------------------------------ STARTUP mini -----------------------------------
 python finetune.py --save_dir ./logs/STARTUP/BTrans/EuroSAT --target_dataset EuroSAT --subset_split datasets/split_seed_1/EuroSAT_labeled_80.csv --embedding_load_path ./logs/STARTUP/EuroSAT/checkpoint_best.pkl --freeze_backbone --model resnet10_BTrans &
 python finetune.py --save_dir ./logs/STARTUP/BTrans/CropDisease --target_dataset CropDisease --subset_split datasets/split_seed_1/CropDisease_labeled_80.csv --embedding_load_path ./logs/STARTUP/CropDisease/checkpoint_best.pkl --freeze_backbone --model resnet10_BTrans &
 python finetune.py --save_dir ./logs/STARTUP/BTrans/ISIC --target_dataset ISIC --subset_split datasets/split_seed_1/ISIC_labeled_80.csv --embedding_load_path ./logs/STARTUP/ISIC/checkpoint_best.pkl --freeze_backbone --model resnet10_BTrans &
-wait
 python finetune.py --save_dir ./logs/STARTUP/BTrans/ChestX --target_dataset ChestX --subset_split datasets/split_seed_1/ChestX_labeled_80.csv --embedding_load_path ./logs/STARTUP/ChestX/checkpoint_best.pkl --freeze_backbone --model resnet10_BTrans
-
-
-# ------------------------------------------ STARTUP_na_tf mini -----------------------------------
-python finetune.py --save_dir ./logs/STARTUP_na_tf/BTrans/EuroSAT --target_dataset EuroSAT --subset_split datasets/split_seed_1/EuroSAT_labeled_80.csv --embedding_load_path ./logs/STARTUP_na_tf/EuroSAT/checkpoint_best.pkl --freeze_backbone --model resnet10_BTrans &
-python finetune.py --save_dir ./logs/STARTUP_na_tf/BTrans/CropDisease --target_dataset CropDisease --subset_split datasets/split_seed_1/CropDisease_labeled_80.csv --embedding_load_path ./logs/STARTUP_na_tf/CropDisease/checkpoint_best.pkl --freeze_backbone --model resnet10_BTrans &
-python finetune.py --save_dir ./logs/STARTUP_na_tf/BTrans/ISIC --target_dataset ISIC --subset_split datasets/split_seed_1/ISIC_labeled_80.csv --embedding_load_path ./logs/STARTUP_na_tf/ISIC/checkpoint_best.pkl --freeze_backbone --model resnet10_BTrans &
-wait
-python finetune.py --save_dir ./logs/STARTUP_na_tf/BTrans/ChestX --target_dataset ChestX --subset_split datasets/split_seed_1/ChestX_labeled_80.csv --embedding_load_path ./logs/STARTUP_na_tf/ChestX/checkpoint_best.pkl --freeze_backbone --model resnet10_BTrans
-
 
 # ------------------------------------------ baseline ImageNet -----------------------------------
 python ImageNet_finetune.py --save_dir ./logs/ImageNet/BTrans/EuroSAT --target_dataset EuroSAT --subset_split datasets/split_seed_1/EuroSAT_labeled_80.csv --embedding_load_path ./logs/ImageNet/checkpoint_best.pkl --freeze_backbone --model resnet18_BTrans
 python ImageNet_finetune.py --save_dir ./logs/ImageNet/BTrans/CropDisease --target_dataset CropDisease --subset_split datasets/split_seed_1/CropDisease_labeled_80.csv --embedding_load_path ./logs/ImageNet/checkpoint_best.pkl --freeze_backbone --model resnet18_BTrans
 python ImageNet_finetune.py --save_dir ./logs/ImageNet/BTrans/ISIC --target_dataset ISIC --subset_split datasets/split_seed_1/ISIC_labeled_80.csv --embedding_load_path ./logs/ImageNet/checkpoint_best.pkl --freeze_backbone --model resnet18_BTrans
-wait
 python ImageNet_finetune.py --save_dir ./logs/ImageNet/BTrans/ChestX --target_dataset ChestX --subset_split datasets/split_seed_1/ChestX_labeled_80.csv --embedding_load_path ./logs/ImageNet/checkpoint_best.pkl --freeze_backbone --model resnet18_BTrans
-
-# ------------------------------------------ baseline_na ImageNet -----------------------------------
-python ImageNet_finetune.py --save_dir ./logs/ImageNet_na/BTrans/EuroSAT --target_dataset EuroSAT --subset_split datasets/split_seed_1/EuroSAT_labeled_80.csv --embedding_load_path ./logs/ImageNet_na/checkpoint_best.pkl --freeze_backbone --model resnet18_BTrans
-python ImageNet_finetune.py --save_dir ./logs/ImageNet_na/BTrans/CropDisease --target_dataset CropDisease --subset_split datasets/split_seed_1/CropDisease_labeled_80.csv --embedding_load_path ./logs/ImageNet_na/checkpoint_best.pkl --freeze_backbone --model resnet18_BTrans
-python ImageNet_finetune.py --save_dir ./logs/ImageNet_na/BTrans/ISIC --target_dataset ISIC --subset_split datasets/split_seed_1/ISIC_labeled_80.csv --embedding_load_path ./logs/ImageNet_na/checkpoint_best.pkl --freeze_backbone --model resnet18_BTrans
-wait
-python ImageNet_finetune.py --save_dir ./logs/ImageNet_na/BTrans/ChestX --target_dataset ChestX --subset_split datasets/split_seed_1/ChestX_labeled_80.csv --embedding_load_path ./logs/ImageNet_na/checkpoint_best.pkl --freeze_backbone --model resnet18_BTrans
-
 
 # ------------------------------------------ AdaBN -----------------------------------
 for target_testset in "ChestX" "ISIC" "EuroSAT" "CropDisease"
